@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Snippet" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css"  href="css/slider.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+    <!--HEADER-->
+        <header>
+            <p><a href="index.html">Flower Shop Name</a></p>
+        </header>
+        
+    <!--LEFT MENU-->
+        <div class="menu">
+            <ul class="fixedmenu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Shop</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+    <!--SLIDER HTML-->
+        <div class="slidebouquets">
+            <ul class="slider">
+                  <li>
+                    <img src="img/slide1.jpg" alt="slide1"/>
+                  </li> 
+                  <li>
+                    <img src="img/slide3.jpg" alt="slide2"/>
+                  </li> 
+                  <li>
+                    <img src="img/slide4.jpg" alt="slide3"/>
+                  </li>
+                  <li>
+                    <img src="img/slide2.jpg" alt="slide4"/>
+                  </li> 
+            </ul>    
+        </div>
+        
+    <!--MAIN (description-under the slider)-->
+        <main class="indexpage">
+            <div class="containermain">
+                <p>
+                    Curabitur elementum feugiat condimentum. Cras porttitor euismod diam quis aliquet. Phasellus hendrerit sit amet metus nec accumsan. Mauris non ligula vel dolor ullamcorper faucibus dapibus maximus dui. Ut a nulla vulputate, eleifend ligula ac, consequat mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet pellentesque sapien at porta. Ut at vulputate dui. Proin turpis enim, aliquet ut urna eu, congue tincidunt velit. Proin finibus neque elit, eget hendrerit elit bibendum vel. Duis odio leo, convallis ut tellus at, aliquam pharetra augue.
+                    <br><br>
+                    Suspendisse rutrum, arcu non scelerisque cursus, massa est pulvinar erat, eu ornare lorem turpis ac lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin congue sem sit amet ipsum ornare aliquam. Ut finibus pulvinar nulla, sit amet placerat nibh. Vestibulum ullamcorper ante et convallis luctus. Praesent ultricies tellus a placerat cursus. Sed quis urna aliquet, scelerisque purus sit amet, venenatis ante.
+                </p>
+            </div>
+        
+    <!--FOOTER-->
+            <footer>
+                <div class="left">
+                    <div class="left-left">
+                        <h3>BUSINESS HOURS</h3>
+                        <ul>
+                            <li>Monday to Friday: hh:mm-hh:mm</li>
+                            <li>Saturday: hh:mm-hh:mm</li>
+                            <li>Sunday: hh:mm-hh:mm</li> 
+                        </ul>
+                    </div>
+                    <div class="left-right">
+                        <h3>CONTACT INFORMATION</h3>
+                        <ul>
+                            <li>Tel: +04 xxx xxx xxx</li>
+                            <li>Mob: +04 7xx xxx xxx</li>
+                            <li>Email: youremail@yourdomain.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-left">
+                        <h3>SOCIAL MEDIA</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-right">
+                        <h3>LEAVE A MESSAGE</h3>
+                        <form>
+                            <input type="text" placeholder="Name and surname" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Leave a message" required></textarea>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+        </main>
+        
+    <!--JQUERY LIBRARY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+    <!--SLIDER JQUERY-->
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script>
+            $(".slider").slider();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,332 @@
+body
+  {  margin: 0;
+  	 font-size: 14px;
+  	 z-index: -1;
+     background-color: #FFE6E8;
+  }
+
+a, a:hover, a:visited, a:active
+  {  text-decoration: none;
+  }
+
+p, h1, h2, h3, h4, h5, h6
+  {  margin: 0;
+  }
+
+*
+  {  box-sizing: border-box;
+  	 outline: none;
+  	 position: relative;
+  }
+
+.clearfix
+  {  clear: both;
+  }
+
+img
+  {  max-width: 100%;
+  }
+
+/*SLIDER*/
+.slidebouquets
+{  width: 70%;
+   padding-top: 50px;
+   margin: 0 auto;
+}
+
+/*HEADER - FOR ALL PAGES*/
+header
+{  background-color: #F8ABB8;
+   height: 50px;
+   font-family: 'Dancing Script', cursive;
+   font-weight: 400;
+   position: fixed;
+   right: 0;
+   left: 0;
+   z-index: 999;
+   border-bottom: 1px solid #F48498;
+}
+
+header>p
+{  width: 100%;
+   text-align: center;
+   font-size: 30px;
+   padding: 7px 0;
+   letter-spacing: 2px;
+}
+
+header a
+{  color: white; 
+}
+
+/*LEFT SIDE MENU - FOR ALL PAGES*/
+.menu
+{  position: fixed;
+   top: 70px;
+   left: 2%;   
+   z-index: 999;
+}
+
+.fixedmenu
+{  padding: 0;
+   list-style-type: none;
+}
+
+.fixedmenu li
+{  padding: 5px 20px;
+   margin-bottom: 20px;   
+   background-color: #F8ABB8;
+   opacity: 1;
+   text-align: center;
+   vertical-align: middle;
+   border: 1px solid #F8ABB8;
+   transition: border 1s ease-in-out;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -o-border-radius: 5px;
+   -ms-border-radius: 5px;
+}
+
+.fixedmenu li a
+{  width: 100%;
+   height: 100%;
+   font-family: 'Dancing Script', cursive;
+   font-weight: 300;
+   font-size: 18px; 
+   color: white;
+   vertical-align: middle;
+}
+
+.fixedmenu li:hover
+{  border: 1px solid #F48498; 
+}
+
+.fixedmenu li a:hover
+{  text-decoration: underline;
+}
+
+/*MEASUREMENTS FOR THE CONTENTS OF ALL PAGES*/
+.containermain
+{  width: 70%;
+   margin: 0 auto;
+   padding: 85px 0 50px 0;
+}
+
+/*FOOTER - FOR ALL PAGES*/
+footer
+{  background-color: #F8ABB8; 
+   font-family: 'Snippet', sans-serif;
+   width: 100%;
+}
+
+footer .left, footer .right
+{  float: left;    
+   width: 50%;
+   text-align: center;
+   vertical-align: middle;
+}
+
+footer .left-left, footer .left-right, footer .right-left, footer .right-right
+{  float: left;
+   padding: 3% 2%;
+   width: 50%;  
+}
+
+footer h3
+{   color: #F48498;
+    border-bottom: double #F48498; 
+}
+
+footer ul
+{  list-style-type: none;   
+   padding: 0;
+}
+
+footer ul li
+{  margin-bottom: 20px; 
+   font-size: 14px;
+   color: white;
+}
+
+footer .left-left ul li a
+{  color: white; 
+   font-size: 20px;
+}
+
+footer .left-left ul li a:hover
+{  text-decoration: underline;
+}
+
+footer .fa
+{  font-size: 25px; 
+}
+
+footer .fa-facebook-square
+{  color: #3b5998;    
+}
+
+footer .fa-instagram
+{  color: black;    
+}
+
+footer .fa-twitter-square
+{  color: #1DA1F2;
+}
+
+footer form
+{  padding: 3% 2% 0 2%; 
+   text-align: center;
+}
+
+footer input, footer textarea
+{  width: 90%;
+   border: 1px solid #F48498;
+   background-color: #f8abb8;
+   margin-bottom: 10px;
+   padding: 10px;
+   transition: color 1s ease-in-out;
+   font-family: 'Snippet', sans-serif;
+}
+
+footer input:focus, footer textarea:focus
+{  background-color: #F48498; 
+   color: white;
+}
+
+/*HOME PAGE*/
+.indexpage .containermain
+{   padding-top: 77px;
+    
+}
+.indexpage p
+{  font-family: 'Snippet', sans-serif;
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+/*CONTACT PAGE*/
+.leftcontact
+{  float: left;
+   width: 50%;
+   padding: 0 2% 3% 0;
+   font-family: 'Snippet', sans-serif;
+}
+
+.leftcontact h2, .rightcontact h2
+{  color: #E78F8E;
+   display: block;
+   padding: 5px 0;
+   text-align: center;
+   border-bottom: double #F48498;  
+}
+
+.leftcontact ul
+{  padding: 0;
+   list-style-type: none;    
+}
+
+.leftcontact ul li
+{  padding: 2% 0;
+}
+
+.rightcontact
+{  float: left;
+   width: 50%;
+   padding: 0 0 3% 2%;
+   font-family: 'Snippet', sans-serif;
+}
+
+.rightcontact p
+{  padding: 3% 0;
+}
+
+.rightcontact input, .rightcontact textarea
+{  width: 100%;
+   margin-bottom: 3%;
+   padding: 10px;
+   border: 1px solid #F48498;
+   background-color: #FFE6E8;
+   font-family: 'Snippet', sans-serif;
+   transition: color 1s ease-in-out;
+}
+
+.rightcontact input[type=submit]
+{  color: black;
+}
+
+.rightcontact input:focus, .rightcontact textarea:focus
+{  background-color: #F48498;   
+   color: white;
+}
+
+.rightcontact input[type=submit]
+{   transition: background-color 1s ease-in-out;    
+}
+
+.rightcontact input[type=submit]:hover
+{  background-color: #F48498;
+}
+
+.map
+{  width: 100%;
+   height: 500px;
+}
+
+/*PRODUCTS PAGE*/
+.containerproduct
+{   float: left;
+    width: 30%;
+    margin-bottom: 6%;
+    font-family: 'Snippet', sans-serif;
+    text-align: right;
+}
+
+.containerproductmiddle
+{   margin-left: 5%;
+    margin-right: 5%;
+}
+
+.product
+{   border: 1px dotted #F48498;
+    padding: 2%;
+    text-align: center;
+}
+
+.product .bouquetdescript
+{   font-size: 12px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+.product select
+{   font-family: 'Snippet', sans-serif;
+    background-color: #FFE6E8;
+    border: 1px solid #F48498;
+}
+
+.product .price
+{   padding: 10px;
+}
+
+.containerproduct button
+{   margin-top: 2%;
+    background-color: #F48498;
+    border: 1px solid #F48498; 
+    padding: 5px 10px;
+    font-family: 'Snippet', sans-serif;
+    transition: background-color 1s ease-in-out;
+}
+
+.containerproduct button a
+{   color: white;
+    transition: color 1s ease-in-out;
+}
+
+.containerproduct button:hover
+{   background-color: #FFE6E8;
+}
+
+.containerproduct button a:hover
+{   color: black;
+}

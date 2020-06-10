@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Snippet" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/slider.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+    <!--HEADER-->
+        <header>
+            <p><a href="index.html">Flower Shop Name</a></p>
+        </header>
+        
+    <!--LEFT MENU-->
+        <div class="menu">
+            <ul class="fixedmenu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Shop</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+    <!--MAIN-->
+        <main class="contactpage">
+            <div class="containermain">
+                <div class="leftcontact">
+                    <h2>CONTACT INFORMATION</h2>
+                    <ul>
+                        <li>TELEPHONE: +04 xxx xxx xxx</li>
+                        <li>MOBILE: +04 7xx xxx xxx</li>
+                        <li>EMAIL ADDRESS: youremail@yourdomain.com</li>
+                        <li>ADDRESS: Street name, number, city, country</li>
+                    </ul>
+                    <h2>BUSINESS HOURS</h2>
+                        <ul>
+                            <li>Monday to Friday: hh:mm-hh:mm</li>
+                            <li>Saturday: hh:mm-hh:mm</li>
+                            <li>Sunday: hh:mm-hh:mm</li> 
+                        </ul>
+                </div>
+                <div class="rightcontact">
+                    <h2>LEAVE A MESSAGE</h2>
+                    <p>If you need more information regarding our products, please send us a message below and we will try to answer as quickly as possible! Thank you!</p>
+                    <form>
+                        <input type="text" placeholder="Name and surname" required>
+                        <input type="number" placeholder="Phone number">
+                        <input type="email" placeholder="Your email" required>
+                        <textarea placeholder="Your message"></textarea>
+                        <input type="submit">
+                    </form>
+                </div>
+                <div id="map" class="map">
+                
+                </div>
+                <div class="clearfix"></div>
+            </div>
+    <!--FOOTER-->
+            <footer>
+                <div class="left">
+                    <div class="left-left">
+                        <h3>BUSINESS HOURS</h3>
+                        <ul>
+                            <li>Monday to Friday: hh:mm-hh:mm</li>
+                            <li>Saturday: hh:mm-hh:mm</li>
+                            <li>Sunday: hh:mm-hh:mm</li> 
+                        </ul>
+                    </div>
+                    <div class="left-right">
+                        <h3>CONTACT INFORMATION</h3>
+                        <ul>
+                            <li>Tel: +04 xxx xxx xxx</li>
+                            <li>Mob: +04 7xx xxx xxx</li>
+                            <li>Email: youremail@yourdomain.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-left">
+                        <h3>SOCIAL MEDIA</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-right">
+                        <h3>LEAVE A MESSAGE</h3>
+                        <form>
+                            <input type="text" placeholder="Name and surname" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Leave a message" required></textarea>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+        </main>
+    
+    <!--MAP-->
+        <script>
+            function myMap() 
+            {   var yourCompany =  new google.maps.LatLng(45.755, 21.23); //change these for other coordonates (1st: latitude, 2nd: longitude)
+                var mapOptions = {
+                    center: yourCompany,
+                    zoom: 16, //change this if you want your map to be displayed more closer to your location or farther away - increase the number for more zoom-in
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var marker = new google.maps.Marker({
+                      position: yourCompany,
+                      map: map
+                    });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    </body>
+</html>
